@@ -11,6 +11,8 @@ services:
         sync: false
       - key: ALLOWED_ORIGINS
         value: "*"
+      - key: PYTHON_VERSION
+        value: 3.11.9
 
   # Frontend Vite Static UI Service
   - type: web
