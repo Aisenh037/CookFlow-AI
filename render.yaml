@@ -13,8 +13,9 @@ services:
         value: "*"
 
   # Frontend Vite Static UI Service
-  - type: static
+  - type: web
     name: cookflow-ai-frontend
+    runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
